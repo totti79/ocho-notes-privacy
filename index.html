@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ocho Notes — Privacy Policy</title>
+<style>:root{color-scheme:light dark}body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:46rem;margin:0 auto;padding:2rem 1.25rem 4rem;color:#14213d;background:#f5f8fe}
+h1{font-size:1.9rem;line-height:1.2}h2{margin-top:2rem;font-size:1.25rem;color:#124a9e}code{background:#e3ecfa;padding:.1em .35em;border-radius:4px;font-size:.92em}a{color:#124a9e}
+@media (prefers-color-scheme:dark){body{background:#0e1521;color:#e4ebf7}h2,a{color:#8db8f5}code{background:#1c2a44}}</style></head>
+<body>
+<h1>Ocho Notes — Privacy Policy</h1>
+<p><strong>Last updated:</strong> 2026-11-15</p>
+<p>This policy applies to the <strong>Ocho Notes</strong> Android app (package <code>com.ocho.notes</code>) published by <strong>Ocho Apps</strong> ("we", "us").</p>
+<h2>Summary</h2>
+<p>Ocho Notes does not collect, transmit, store, or share your notes or any other content you create, anywhere, ever. There are no accounts, no cloud sync, no analytics, and no advertising. The app's own code contains no feature that sends your content over a network. The one exception to "no network use" is the optional one-time <strong>Pro</strong> purchase, which goes through Google Play Billing: that library requires the <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> permissions, and it talks only to Google Play, to complete the purchase and confirm you own it. No note, checklist, or other vault content is ever part of that exchange.</p>
+<h2>What data the app handles</h2>
+<p>Your notes, checklists, folders, and project-board cards are stored exclusively in a local, encrypted database on your device (<code>AES-256-GCM</code>, keys derived from your master passphrase via <code>Argon2id</code>, with the biometric unlock key additionally protected by your device's hardware-backed Android Keystore where available). Vaults created by earlier versions used <code>PBKDF2-HMAC-SHA512</code> and are upgraded to Argon2id the next time they are unlocked. This data:</p>
+<ul><li>Never leaves your device.</li><li>Is never transmitted over any network.</li><li>Is never visible to the developer, or to anyone but you.</li><li>Can be permanently and irrecoverably deleted at any time via Settings → Danger Zone → Hold to Erase All Data.</li></ul>
+<h2>Encrypted backups</h2>
+<p>You may optionally export an encrypted <code>.outline</code> backup file to a location you choose on your own device (or external storage you control, such as an SD card or a folder you sync yourself). This file is encrypted with a passphrase you set at export time. The app does not upload this file anywhere — where it ends up, and whether you back it up further (e.g. to your own cloud storage), is entirely up to you and outside the app's control.</p>
+<p><strong>There is no password recovery.</strong> If you forget your vault passphrase or a backup's passphrase, that data cannot be recovered by the developer or anyone else — it is cryptographically inaccessible without the correct passphrase, by design.</p>
+<h2>Permissions</h2>
+<p>The app requests no permissions beyond what's needed to let you pick a file location for backup/restore (Android's Storage Access Framework, which does not grant the app broad storage access — only access to the specific file you choose in the system picker). Through the Google Play Billing library the app also declares <code>com.android.vending.BILLING</code>, <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>, used only for the optional Pro purchase. It does not request contacts, location, camera, microphone, or any other sensitive permission.</p>
+<h2>Third-party services</h2>
+<p>The only third-party service is Google Play (Google Play Billing), used solely to process and verify the optional one-time Pro purchase; Google's own privacy policy governs that exchange. The app contains no analytics SDKs, no crash-reporting SDKs, and no advertising SDKs.</p>
+<h2>Changes to this policy</h2>
+<p>If we ever change how the app handles data, this policy will be updated before that change ships, and the "Last updated" date above will change. The app does not collect personal data, so there is nothing to notify you about by email or in the app.</p>
+<h2>Children</h2>
+<p>Ocho Notes is a general-purpose notes app. It does not knowingly collect any information from anyone, including children.</p>
+<h2>Contact</h2>
+<p>Questions about this policy or the app: <strong>Ocho Apps</strong> — <a href="mailto:support.lzhapps@gmail.com">support.lzhapps@gmail.com</a></p>
+</body></html>
